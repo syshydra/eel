@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: all 300ms ease;
+}
+
+body{
+    width: 100%;
+    background: #f6f6f9;
+    display: flex;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #2c315af5;
+}
+
+.container .text{
+    width: 100%;
+    height: 200px;
+    margin: 0;
+
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+}
+
+.container .text h2{
+    font-weight: 666;
+    font-size: 16pt;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.container .text p{
+    color: #fff;
+    margin-top: 1rem;
+    font-size: 15px;
+}
+
+.container .dash_menu{
+    width: 100vw;
+    height: 100vh;
+    margin-top: -6rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+}
+
+.container .dash_menu div{
+    width: 100%;
+    display: flex;
+    margin: 0px 0;
+    padding: 2px;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .dash_menu a{
+    width: 130px;
+    height: 135px;
+    position: relative;
+    display: flex;
+    margin:5px 10px;
+    border-radius: 20px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    background: #383d6396;
+    backdrop-filter: blur(30px);
+    box-shadow: 0 .5rem 1rem #2c315a9a;;
+}
+
+.container .dash_menu .icon{
+    width: 55px;
+    height: 55px;
+    top: 20px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15pt;
+    border-radius: 50%;
+    color: #fff;
+}
+.container .dash_menu .text_btn{
+    font-weight: 666;
+    color: rgba(236, 217, 217, 0.548);
+}
+.container .dash_menu a:hover .text_btn{
+    color: #fff;
+}
+
+
+.container .dash_menu div:nth-child(1) a:nth-child(1) .icon{
+    background: linear-gradient(rgb(10, 144, 206),rgb(35, 92, 250));
+}
+.container .dash_menu div:nth-child(1) a:nth-child(2) .icon{
+    background: linear-gradient(rgb(190, 102, 248),rgb(165, 60, 197));
+}
+
+
+.container .dash_menu div:nth-child(2) a:nth-child(1) .icon{
+    background: linear-gradient(rgb(245, 100, 221),rgb(222, 53, 238));
+}
+.container .dash_menu div:nth-child(2) a:nth-child(2) .icon{
+    background: linear-gradient(rgb(240, 203, 82),rgb(243, 150, 10));
+}
+
+
+.container .dash_menu div:nth-child(3) a:nth-child(1) .icon{
+    background: linear-gradient(rgb(230, 69, 69),rgb(255, 51, 0));
+}
+.container .dash_menu div:nth-child(3) a:nth-child(2) .icon{
+    background: linear-gradient(rgb(201, 245, 130),rgb(32, 150, 38));
+}
+
+.container .dash_menu .text_btn{
+    position: absolute;
+    bottom: 1rem;
+}
+
+.menu{
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2c315ac5;
+    border-top: 1px solid #13132518;;
+    z-index: 5;
+}
+
+.menu a{
+    font-size: 18pt;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.menu a:nth-child(1) {
+    position: absolute;
+    left: 3rem;
+}
+
+.menu a:nth-child(3) {
+    position: absolute;
+    right: 3rem;
+}
+
+.menu a.active span{
+    color: #fc9a08;  
+}
+
+
+.container .animate_poligon{
+    top: -5rem;
+    left: -3.5rem;
+    width: 330px;
+    height: 330px;
+    position: absolute;
+    border-radius: 4rem;
+    transform: rotate(45deg);
+    box-shadow: var(--box-shadow);
+    background: linear-gradient(rgb(241, 118, 200),rgba(248, 57, 184, 0.726));
+    z-index: 1;
+}
